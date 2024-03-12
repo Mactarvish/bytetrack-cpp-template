@@ -1,0 +1,44 @@
+{
+  "version": "5.1.1",
+  "annotator": "LWX1995",
+  "annotation_time": "2024-02-04 11:12:31",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "hand",
+      "points": [
+        [
+          313.01282051282055,
+          113.58974358974356
+        ],
+        [
+          562.3717948717949,
+          290.51282051282044
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    },
+    {
+      "label": "hand",
+      "points": [
+        [
+          470.0641025641026,
+          307.8205128205128
+        ],
+        [
+          659.1666666666667,
+          536.6666666666666
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "VID_20240204_094649_000292.jpg",
+  "imageData": null,
+  "imageHeight": 540,
+  "imageWidth": 960
+}

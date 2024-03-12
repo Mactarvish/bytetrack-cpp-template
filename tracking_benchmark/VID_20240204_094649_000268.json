@@ -1,0 +1,28 @@
+{
+  "version": "5.1.1",
+  "annotator": "LWX1995",
+  "annotation_time": "2024-02-04 11:07:14",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "hand",
+      "points": [
+        [
+          508.52564102564105,
+          132.82051282051282
+        ],
+        [
+          782.8846153846154,
+          348.8461538461538
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "VID_20240204_094649_000268.jpg",
+  "imageData": null,
+  "imageHeight": 540,
+  "imageWidth": 960
+}
