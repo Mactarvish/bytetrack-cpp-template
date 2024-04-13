@@ -98,7 +98,7 @@ Mat VisualizeResult(const Mat& srcImage, const vector<HandDetectionResult>& hdrs
 }
 
 
-inline bool ReadJson(const string& srcJsonPath, Json::Value& r)
+bool ReadJson(const string& srcJsonPath, Json::Value& r)
 {
     r.clear();
     ifstream inFile(srcJsonPath.data(), ios::binary);
@@ -110,19 +110,12 @@ inline bool ReadJson(const string& srcJsonPath, Json::Value& r)
     return reader.parse(inFile, r);
 }
 
-inline void WriteJson(const Json::Value& r, const string& jsonSavePath)
+void WriteJson(const Json::Value& r, const string& jsonSavePath)
 {
-    // 不知道什么原因，有的时候写入会失败，这里循环读取检查写入是否成功
-    int c = 0;
-    Json::Value m;
-    do
-    {
         ofstream ofFile(jsonSavePath.data(), std::ios::out);
         Json::FastWriter writer;
         std::string jsonstr = writer.write(r);
         ofFile << jsonstr;
-        c++;
-    } while (c < 10 && !ReadJson(jsonSavePath, m));
 }
 
 
